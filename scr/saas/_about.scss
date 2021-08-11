@@ -1,0 +1,49 @@
+.about__content{
+  padding: 119px 0 0 0;
+}
+
+.about__title{
+  padding: 0 0 50px 0;
+}
+
+.about__dsr{
+  padding: 0 0 100px 0;
+}
+
+.about__footer{
+  padding: 100px 0;
+  background: #34547A;
+  @media(max-width:552px){
+    padding: 5% 0;
+  }
+}
+
+.about-footer__row{
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content: space-between;
+}
+.about-footer__column{
+  display: flex;
+  justify-content: space-between;
+  @media(max-width:552px){
+    display: none;
+  }
+}
+.about__icon{
+  
+  background:url("/dist/img/Group.svg") no-repeat;
+  object-fit: cover;
+  width: 50px ;
+  height: 50px;
+  padding: 0px 15px;
+}
+
+.about-icon__dsr{
+ color: #FFFFFF;
+ span{
+   font-weight: 500;
+ }
+}
+

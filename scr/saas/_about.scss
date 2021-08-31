@@ -1,0 +1,119 @@
+.about{
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 26px;
+  background:#d2d0d8;
+}
+
+.about__raw{
+  padding: 3% 1%;
+
+}
+
+.about__title{
+  display: inline;
+  position: relative;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 132%;
+    left: -3%;
+    height: 3px;
+    width: 116%;
+    background: #34547A;
+  }
+}
+// Main Information block
+.main__information{
+  display: flex;
+  // flex-wrap:wrap;
+  padding: 7% 6%;
+  @media(max-width:552px){
+    flex-direction: column;
+  }
+}
+//  Main Information about author
+.about__column{
+  flex: 33% 60%;
+}
+.author__info{
+  margin-left: auto;
+}
+.main__info {
+  margin: 20px;
+  b{
+    margin-right: 20px;
+  }
+}
+.author__skils{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.skills{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  .skill{
+    margin-right: 10px;
+    padding: 2px 6px;
+    background:#34547A;
+    color:#ffffff;
+    border-radius: 23%;
+    flex: 33% 33% 33%;
+    text-align: center;
+  }
+  @media(max-width:552px){
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+
+// Author's photo
+.about__photo{
+  position: relative;
+  padding: 16% 20%;
+  border: 5px solid #34547A;
+  border-radius:50%;
+  overflow: hidden;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media(max-width:552px){
+    padding: 39% 20%;
+  }
+}
+
+
+// Expirience Block
+.expirience__column{
+  flex: 1;
+}
+.author__expirience{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 3%;
+  
+}
+
+.expirience__icon{
+  width:53px;
+  background: url('/scr/img/suitcase.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 7%;
+  &-course{
+    background: url('/scr/img/graduation-cap.svg');
+    background-repeat: no-repeat;
+  }
+  &-education{
+    background: url('/scr/img/graduation-cap.svg');
+    background-repeat: no-repeat;
+  }
+  
+}
+
